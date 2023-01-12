@@ -1,4 +1,4 @@
 export const environment = {
 	production: true,
-	config: 'https://elkin-garzon.github.io/myCvElkinGarzon/assets/data.json',
+	config: 'https://elkin-garzon.github.io/myCvElkinGarzon/assets',
 };
