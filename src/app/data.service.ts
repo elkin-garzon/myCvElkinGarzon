@@ -16,6 +16,10 @@ export class DataService {
 		this.url = `${environment.config}/data.json`;
 	}
 
+	/**
+	 * 
+	 * @returns data de carpeta assets
+	 */
 	getData() {
 		return this.HttpClient.get<any>(this.url);
 	}
