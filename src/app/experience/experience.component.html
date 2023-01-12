@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row animate-box">
             <div class="col-md-12 text-center fh5co-heading">
-                <h2>My Resume</h2>
+                <h2>Mi resumen</h2>
             </div>
         </div>
         <div class="row">
@@ -10,45 +10,23 @@
                 <ul class="timeline">
                     <li class="timeline-heading text-center animate-box">
                         <div>
-                            <h3>Work Experience</h3>
+                            <h3>Experiencia laboral</h3>
                         </div>
                     </li>
-                    <li class="animate-box timeline-unverted">
-                        <div class="timeline-badge"><i class="icon-suitcase"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h3 class="timeline-title">Senior Developer</h3>
-                                <span class="company">Company Name - 2016 - Current</span>
-                            </div>
-                            <div class="timeline-body">
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                    Consonantia, there live the blind texts.</p>
-                            </div>
+                    <!-- inverted -->
+                    <li *ngFor="let row of experiences ; let i = index" class="animate-box" [ngClass]="i%2==0 ? 'timeline-unverted' : 'timeline-inverted'">
+                        <div class="timeline-badge">
+                            <i class="icon-suitcase"></i>
                         </div>
-                    </li>
-                    <li class="timeline-inverted animate-box">
-                        <div class="timeline-badge"><i class="icon-suitcase"></i></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h3 class="timeline-title">Junior Developer</h3>
-                                <span class="company">Company Name - 2013 - 2015</span>
+                                <h3 class="timeline-title">{{row.position}}</h3>
+                                <span class="company">{{row.enterprice}} - {{ formatDate(row.dateInit)}} - {{formatDate(row.dateEnd)}}</span>
                             </div>
                             <div class="timeline-body">
-                                <p>Far far away, behind the word mountains, they live in Bookmarksgrove right at
-                                    the coast of the Semantics, a large language ocean.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="animate-box timeline-unverted">
-                        <div class="timeline-badge"><i class="icon-suitcase"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h3 class="timeline-title">UI/UX Designer</h3>
-                                <span class="company">Company Name - 2010 - 2012</span>
-                            </div>
-                            <div class="timeline-body">
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                    Consonantia, there live the blind texts.</p>
+                                <p>
+                                    <span *ngFor="let row of rederList(row.functions)" class="functions"> {{row}}</span>
+                                </p>
                             </div>
                         </div>
                     </li>

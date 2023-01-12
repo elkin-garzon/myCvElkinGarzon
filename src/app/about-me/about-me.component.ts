@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-about-me',
@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AboutMeComponent {
 
+  @Input() information: any = {};
+  @Input() profile: any = {};
 }

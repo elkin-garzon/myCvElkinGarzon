@@ -1,7 +1,7 @@
 <div id="page">
     <app-header></app-header>
-    <app-about-me></app-about-me>
-    <app-experience></app-experience>
-    <app-study></app-study>
-    <app-skills></app-skills>
+    <app-about-me [information]="data.information"  [profile]="data.profile"  *ngIf="data.information"></app-about-me>
+    <app-experience [experiences]="data.experiences" *ngIf="data.experiences"></app-experience>
+    <app-study [studies]="data.studies" *ngIf="data.studies"></app-study>
+    <app-skills [knowledges]="data.knowledges" *ngIf="data.knowledges"></app-skills>
 </div>
