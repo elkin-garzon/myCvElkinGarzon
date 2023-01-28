@@ -166,7 +166,7 @@
         {
             "id": 9,
             "technology": "docker",
-            "percentage": 50,
+            "percentage": 40,
             "created_add": "2022-12-13T18:37:22.000+00:00",
             "updated_add": null
         },
@@ -175,6 +175,13 @@
             "technology": "SEO",
             "percentage": 60,
             "created_add": "2022-12-13T18:39:22.000+00:00",
+            "updated_add": null
+        },
+        {
+            "id": 12,
+            "technology": "Java",
+            "percentage": 30,
+            "created_add": "2022-12-13T18:40:09.000+00:00",
             "updated_add": null
         },
         {
@@ -187,15 +194,6 @@
     ],
     "studies": [
         {
-            "id": 1,
-            "university": "Fundacion Universitaria Monserrate",
-            "title": "Desarrollador Web Multimedil",
-            "status": true,
-            "dateEnd": "2016-06-01",
-            "created_add": "2022-12-12T14:10:59.000+00:00",
-            "updated_add": "2022-12-13T18:34:56.000+00:00"
-        },
-        {
             "id": 2,
             "university": "Corporación Unificada Nacional de Educación Superior CUN",
             "title": "Ingeniero de sistemas",
@@ -203,6 +201,15 @@
             "dateEnd": "2023-02-15",
             "created_add": "2022-12-13T18:33:51.000+00:00",
             "updated_add": null
+        },
+        {
+            "id": 1,
+            "university": "Fundacion Universitaria Monserrate",
+            "title": "Desarrollador Web Multimedil",
+            "status": true,
+            "dateEnd": "2016-06-01",
+            "created_add": "2022-12-12T14:10:59.000+00:00",
+            "updated_add": "2022-12-13T18:34:56.000+00:00"
         }
     ]
 }
